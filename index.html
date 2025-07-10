@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prapurna Narravula - Portfolio</title>
+  <style>
+    :root {
+      --bg: #d4f5ea;
+      --text: #333;
+      --secondary: #555;
+      --card: #fff;
+      --border: green;
+      --accent: green;
+      --link: #0077cc;
+    }
+
+    body.dark {
+      --bg: #1c1c1c;
+      --text: #eee;
+      --secondary: #aaa;
+      --card: #2b2b2b;
+      --border: #64ffda;
+      --accent: #64ffda;
+      --link: #64b5f6;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 15px;
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+      transition: background 0.4s, color 0.4s;
+    }
+
+    .container {
+      max-width: 900px;
+      background: var(--card);
+      margin: 30px auto;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      border: 2px solid var(--border);
+      transition: background 0.4s, border 0.4s;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 28px;
+      color: var(--accent);
+    }
+
+    .header-text p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: var(--secondary);
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+    }
+
+    h2 {
+      font-size: 16px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 4px;
+      margin-top: 25px;
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 13px;
+      color: var(--secondary);
+    }
+
+    .toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      padding: 6px 14px;
+      cursor: pointer;
+      font-size: 13px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+      z-index: 1000;
+    }
+
+    .toggle:hover {
+      background: var(--accent);
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle" onclick="toggleMode()">🌙Dark Mode</div>
+  <div class="container">
+    <div class="header">
+      <div class="header-text">
+        <h1>PRAPURNA NARRAVULA</h1>
+        <p>📞 +91 9014143868</p>
+        <p>📧 prapurnanarravula7@gmail.com</p>
+        <p>🔗 
+          <a href="https://www.linkedin.com/in/prapurna-narravula-2a1a622b9?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BrLwgSm9vTYSpSohvdZynAQ%3D%3D">LinkedIn</a> | 
+          <a href="https://github.com/Prapurna71">GitHub</a>
+        </p>
+      </div>
+      <img src="WhatsApp Image 2025-05-07 at 20.42.43_fee05e0c.jpg" alt="Prapurna's photo" class="profile-pic" />
+    </div>
+
+    <h2>Objective</h2>
+    <p>A driven AI/ML student with a strong foundation in machine learning and artificial intelligence...</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech - AI & ML</strong>, SRKR Engineering College (2023–2027) — CGPA: 9.18</li>
+      <li><strong>Intermediate - MPC</strong>, GDMM Junior College (2021–2023) — 97.3%</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, C, Java, JavaScript</li>
+      <li><strong>ML Tools:</strong> NumPy, Pandas, Matplotlib, Scikit-Learn</li>
+      <li><strong>Web Tech:</strong> HTML, CSS, JavaScript, MySQL</li>
+      <li><strong>Tools:</strong> VS Code, Git, Streamlit</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Banknote Authentication:</strong> Built a 99% accurate Streamlit app to detect counterfeit notes.<br><em>Tools: Python, Scikit-Learn, Streamlit</em></li>
+      <li><strong>Smart Seller Assistant:</strong> Predicted optimal price and month for products on e-commerce platforms.<br><em>Tools: Python, Pandas, Matplotlib</em></li>
+      <li><strong>EduHub Website:</strong> A web platform with tutorials, quizzes, and progress tracking.<br><em>Tools: HTML, CSS, JS, Git</em></li>
+    </ul>
+
+    <h2>Work Experience</h2>
+    <ul>
+      <li><strong>AI/ML Intern at Google for Developers</strong> (Oct–Dec 2024): Hands-on experience in ML using Python, Scikit-Learn, Pandas.</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>Intro to Generative AI – Google Cloud</li>
+      <li>Programming with C – Cisco Academy</li>
+      <li>Python & Frontend Dev – Infosys Springboard</li>
+      <li>Design Thinking – Infosys Springboard</li>
+    </ul>
+
+    <footer>
+      &copy; 2025 Prapurna Narravula
+    </footer>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
